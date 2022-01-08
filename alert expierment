@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>
+    alert and prompt
+    </title>
+    </head>
+    <body bgcolor = "000">
+      
+       <div id = "page">
+        
+        <style>
+            #msg {
+                position: fixed ;
+                word-wrap: break-word ;
+                top: 50px ; 
+                width: 300;
+                box-shadow: 0 0 10px ;
+                shape-inside: rectangle();
+                font-size: 25px;
+                color: blue;
+                background-color: beige;
+                opacity: 1 ;
+                z-index: auto;
+            }
+    
+        </style>
+      
+      
+        <button onclick = "showmsg(window.type.value);">hello</button>
+        <input id= "type" value="" />
+        </div>
+
+       
+         
+          <script>
+        var bg;
+        function showmsg (text id = "message") {
+            var L = (document.body.clientwidth - 300)/2 ;
+            window.page.style.opacity = 0.2 ;
+            window.page.style.backgroundColor = bg;
+            bg = document.body.style.backgroundColor = "aaa";
+            window.page.style.zIndex = 0 ;
+            var strmsg = "" ;
+            strmsg += "<div id = 'page'> </div>" + text + "<br><br>" +
+                "<Button>OK </Button"  ;
+            window.mas.innerHTML = strmsg;
+                window.msg.style.left = L;
+            
+            
+            
+            
+        }
+        
+        
+        
+        </script>
+   
+    
+    
+    </body>
+   
+</html>

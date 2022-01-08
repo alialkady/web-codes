@@ -1,0 +1,36 @@
+<html>
+<head><title> go</title></head>
+<body>
+    <script>
+    
+    <html>
+<head>
+    <title> array</title>
+    
+    </head>
+    
+    <body>
+    <script>
+        function print(text) {
+            
+            document.write(text + "<br>") ;
+            
+        }
+        
+    print(1);
+        
+        
+        
+        </script>
+    
+    
+    </body>
+</html>
+    
+    
+    
+    </script>
+    
+    
+    </body>
+</html>

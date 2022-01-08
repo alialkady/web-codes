@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> function </title>
+</head>
+<body>
+<h1 id="lbl"></h1>
+<label> person Name:</label>
+<input id="txtName" />
+<button  onclick="sayhello();"> clickhere </button>
+<br><br>
+<a href= "#">click</a>
+
+<script src = "my.%20js"></script>    
+</body>
+</html>    

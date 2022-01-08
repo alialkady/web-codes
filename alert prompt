@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title> alert </title>
+    
+    </head>
+    <body bgcolor="#aabb33">
+    <style>
+        #mymsg{
+            position: fixed;
+            top: 30px;
+            width: 300px;
+            word-wrap: break-word;
+            box-shadow: 0 0 5px rgba(159,159,159,0.6);
+            border-radius: 7px;
+            background-color: aqua;
+            text-align: center;
+            z-index: 10001;
+            opacity: 1;
+            padding 10px;
+        }
+        
+        input{
+            width: 350px;
+            
+        }
+        
+        
+       
+        
+        
+        </style>
+        
+        
+        <div id="page" onmousedown="hidemsg">
+        
+        <button onclick="window.h.innerHTML=prompt('Enter Name');">Test prompt</button>
+      <button onclick="alert('wlcome');">Test Alert </button>
+            <br><br>
+            <input id="txt" value="welcome welcome"   />
+            <button onclick = "showmsg(window.txt.value);"> test msg</button>
+            <br><br>
+            <button onclick = "showinput('entername:', window.h);">Test input</button>
+            
+            
+            
+            
+            
+        <h1 id="h" style="color: blue;"> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        <h1> welcome</h1>
+        
+        </div>
+        <div id="msg"></div>
+        <script>
+            var bg;
+            var ell;
+            function showmsg(text="MYMessage"){
+                var L = (document.body.clientWidth - 300) / 2;
+                 window.page.style.opacity = 0.2;
+                document.body.style.zIndex = 0;
+                bg = document.body.style.backgroundcolor;
+                document.body.style.backgroundColor = "ddd";
+                var strMsg = "";
+                strMsg += "<div id= 'mymsg'>" + text + "<br><br>"
+                + "<Button onclick = 'hidemsg();'> OK</Button></div>";
+                window.msg.innerHTML = strMsg;
+                window.mymsg.style.left = L;
+                
+            }
+        function hidemsg(){
+            
+            window.msg.innerHTML = "";
+            window.page.style.opacity = 1;
+            document.body.style.backgroundColor = bg;
+        }
+            
+             function showinput(title, el){
+                 ell = el;
+                var L = (document.body.clientWidth - 300) / 2;
+                 window.page.style.opacity = 0.2;
+                document.body.style.zIndex = 0;
+                bg = document.body.style.backgroundcolor;
+                document.body.style.backgroundColor = "ddd";
+                var strMsg = "";
+                strMsg += "<div id= 'mymsg'>" + title + "<br>" + "<input id = 'txtinput' style='width: 200px' />"
+                 "<br><br><br>"
+                + "<Button onclick = 'hideinput();'> OK</Button></div>";
+                window.msg.innerHTML = strMsg;
+                window.mymsg.style.left = L;
+                 window.txtinput.focus();
+                
+            }
+            
+            function hideinput (){
+                ell.innerHTML = window.txtinput.value;
+                hide hidemsg();
+                
+            }
+        </script>
+    
+    
+    </body>
+</html>

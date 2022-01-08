@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>
+    console
+    </title>
+    </head>
+    <body>
+    <h1 id = "h"></h1>
+        
+        <script>
+        function print(text) {
+            
+            window.h.innerHTML = text;
+        
+        }
+            var x;
+            
+            if (x < 4000) {
+                print(x);
+                
+            }
+        
+        
+        </script>
+    </body>
+    
+</html>

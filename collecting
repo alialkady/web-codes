@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>
+    collecting
+    </title>
+    <style>
+    body {
+            
+            width:194;
+            height: 259;    
+                 background-image: url("projectbackground.jpg");
+            background-repeat: no-repeat;
+             
+        }
+       
+        
+        }
+        .link {
+            
+            color: blue;
+            font-size: 5px;
+        }
+        label {
+            
+            border: solid 1px;
+            color: brown;
+            
+        }
+    body {
+            
+         
+                
+                 background-image: url("projectbackground.jpg");
+            background-repeat: no-repeat;
+        
+             
+    
+        
+        
+        
+             
+        }
+       
+        
+        }
+        .link {
+            
+            color: blue;
+            font-size: 5px;
+        }
+        label {
+            
+            border: solid 1px;
+            color: brown;
+            
+        }
+        
+        .firstphoto {
+            
+            font-size: 3px;
+        }
+        
+    
+    </style>
+    </head>
+    
+    <body>
+     <div><label>Email:</label>
+       <input/>
+       <br>
+       <br>
+       <label >password:</label>
+       <input type ="password"/>
+       <br>
+       <a href= "https://docs.google.com/forms/d/e/1FAIpQLSct3oQgXLaCkiccT22uoiOfR3lCLaikvj_dxJUhjjlBuYa0Og/viewform" class = 'link'>Create my account</a>
+       <br><br>
+       <button id = "sign" onclick="signin();">sign in</button>
+       </div>
+        
+        
+    
+    
+    <script>
+        function signin() {
+              document.write("<h2 class = 'firstphoto'>If you want check your eye click on the photo</h2><h1id='click'></h1>" + "<br>" + "<img src = 'startproject.jpg.jpg' onclick = 'check();'/>" + "<br><br>"+"<h2>If you want to know your disease click on the photo</h2> " +"<br>" +
+                            "<img src='searchphoto.jpg' onclick ='information()';/> ");
+            document.write(" <br> <h1 class='thirdphoto'> diseases map</h1>'  <img src='template.png'/>");
+            
+            
+
+            
+        }
+       function check () {
+           window.click.innerHTML =  document.write("<a href ='file:///E:/programming/Brackets/samples/root/Getting%20Started/first%20part.htm' id>click</a>")
+  
+       
+   }
+        function information() {
+            document.write("<a href = 'file:///E:/programming/Brackets/samples/root/Getting%20Started/second%20part.htm' id='click2'>click</a>");
+            
+        }
+        
+    
+        
+        
+        </script>
+    
+    </body>
+</html>
